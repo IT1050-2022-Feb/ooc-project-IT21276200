@@ -4,6 +4,7 @@
 #include <string>
 
 Administrator::Administrator(string ufname,string ulname, string unic, string upno,string usf,string upos,int aid):User(ufname,ulname,unic,upno,usf,upos)
+
 {
    adminid=aid;
 }
