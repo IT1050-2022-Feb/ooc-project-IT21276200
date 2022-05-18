@@ -4,6 +4,7 @@
 class Test;     //calling test before scientist class to point to the Test class
 class Sample;   //calling Sample before scientist class to point to the sample class
 
+//inheritance relationship - inherit from User class
 class Scientist : public User {
   private:
     Sample* sampNew; //association relationship
@@ -13,7 +14,7 @@ class Scientist : public User {
     Sample* samp;
   public:
     Scientist();//default constructor
-    Scientist(string ufname,string ulname, string unic, string upno,string usf,string upos ,string sID,Sample *s);
+    Scientist(string ufname,string ulname, string unic, string upno,string usf,string upos ,string sID,Sample *s); //overloaded constructor declared  
 
   void displaySampleBy();
   

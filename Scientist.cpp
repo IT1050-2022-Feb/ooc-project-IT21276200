@@ -10,7 +10,7 @@ Scientist::Scientist(){
   
 }
 
-//overloaded constructors 
+//overloaded constructors  - with the inherited attributes from user
 Scientist::Scientist(string ufname,string ulname, string unic, string upno,string usf,string upos ,string sID,Sample *s):User(ufname,ulname,unic,upno,usf,upos){
     scientistID = sID;
     samp = s;
