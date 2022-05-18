@@ -1,8 +1,8 @@
-#include "LabAssistant.h"
+#include "LabAssistant.h" //including LabAssistant header file
 
 
-#include <iostream> 
-#include <string>
+#include <iostream>  // including iostream library
+#include <string>  // including string library
 using namespace std;
 
 //default constructor
@@ -17,21 +17,20 @@ LabAssistant::LabAssistant(string ufname,string ulname, string unic, string upno
 	eqmt = e;
 }
 
-void LabAssistant::addEquipmentDetails()
+void LabAssistant::addEquipmentDetails() //association relation between Equipment and Lab Assistamt
 {
 	cout << "     Lab_Assistant's ID : " << labAssistantID << endl;
-	eqmt->displayDetails();   //association relation between Equipment and Lab Assistamt
+	eqmt->displayDetails();  //Calling for the displayDetails method in Equipment class
 }
-LabAssistant::~LabAssistant() {
+void LabAssistant::addEquipment() {  //addEquipment method
+  
+}
+void LabAssistant::editEquipment() {  //editEquipment method
+  
+}
+void LabAssistant::deleteEquipment() {  //deleteEquipment method
+  
+}
+LabAssistant::~LabAssistant() { // destructor
 	cout << " --> Deleting Lab_Assistant " << endl;
-}
-
-void LabAssistant::addEquipment() {
-  
-}
-void LabAssistant::editEquipment() {
-  
-}
-void LabAssistant::deleteEquipment() {
-  
 }
