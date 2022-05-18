@@ -1,8 +1,8 @@
 #include <string>
-using namespace std;
+usring namespace std;
 class User
 {
- protected:
+  protected:
     string FirstName;
     string LastName;
     string Nic;
@@ -10,9 +10,8 @@ class User
     string SpecializingField;
     string Position;
 
- public:
+   public:
     User();
     void displayDeatails();
     ~User();
-    
 };
