@@ -1,8 +1,8 @@
 #pragma once
 
-#include "user.h"
-class Test;
-class Sample;
+#include "user.h" //including user header file
+class Test;     //calling test before scientist class to point to the Test class
+class Sample;   //calling Sample before scientist class to point to the sample class
 
 class Scientist : public User {
   private:
