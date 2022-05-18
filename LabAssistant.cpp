@@ -4,11 +4,13 @@
 #include <string>
 using namespace std;
 
+//default constructor
 LabAssistant::LabAssistant() {
 	labAssistantID = 0;
 	eqmt = 0;
 	}
-LabAssistant::LabAssistant(int ilabAssistantID, Equipment*e)
+//overloaded constructors
+LabAssistant::LabAssistant(int ilabAssistantID, Equipment*e):User(ufname,ulname,unic,upno,usf,upos)
 {
 	labAssistantID = ilabAssistantID;
 	eqmt = e;
@@ -23,6 +25,12 @@ LabAssistant::~LabAssistant() {
 	cout << " --> Deleting Lab_Assistant " << endl;
 }
 
-void LabAssistant::addEquipment() {}
-void LabAssistant::editEquipment() {}
-void LabAssistant::deleteEquipment() {}
+void LabAssistant::addEquipment() {
+  
+}
+void LabAssistant::editEquipment() {
+  
+}
+void LabAssistant::deleteEquipment() {
+  
+}

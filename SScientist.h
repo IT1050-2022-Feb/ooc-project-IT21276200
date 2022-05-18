@@ -2,22 +2,27 @@
 #include <string>
 using namespace std;
 
-class SScientist
+class SScientist : user
 {
-    private:
+  private:
    	int ssID ;
-    Test *tcond;
+    Test *test_1;
    	Test *conduct; //an object of Test as attribute
- // Sample *sadd;  //an object for Sample class for Association relationship 
- // Sample *add ;//an object of Sample class for Association relationship
+ // Sample *samp_New;  //an object for Sample class for Association relationship 
+ // Sample *add ;  //an object of Sample class for Association relationship
 
-   public:
-   SScientist (int pssID,  Test *c) ;
+  public:
+
+   SScientist (int pssID,  Test *c) ; //overloaded constructor
+
    void displayConductedBy();
+
+   void displaySeniorScientistDetails();
+
   //  SScientist(int pssID, Sample *a)
-  // {
+  //  {
   //  ssID = pssID ;
-   // add = a ;
+  //  add = a ;
   //  }
 
   //  void displayAdd(){
@@ -25,10 +30,10 @@ class SScientist
   //  add -> displayDetails(); } // tis method should be Sample class's method
 
 
-  void addSample (/* Sample *sadd*/ ); // Sample - SScientist Association Relationship
+  void addSample (/* Sample *samp_New */); // Sample - SScientist Association Relationship
   void editSample();
   void deleteSample();
-  void conductTest(/*Test *tcond */); // Test - SScientist Association relationship
+  void conductTest(/* Test *test_1 */); // Test - SScientist Association relationship
   void EditTest();
   void deleteTest();
   void viewEquip();

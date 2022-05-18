@@ -1,6 +1,6 @@
 #include "user.h"
 #include <string>
-using namespace std;
+using namespace  std;
 
 class Administrator:public User
 {
@@ -8,9 +8,12 @@ class Administrator:public User
   int adminid;
 
  public:
-  Administrator();
-  void addUser();
-  void editUser();
-  void deleteUser();
-  void displayDeatails();
+   Administrator();
+   Administrator(string ufname,string ulname, string unic, string upno,string usf,string upos,int aid);
+   void addUser();
+   void editUser();
+   void deleteUser();
+   void displayDeatails();
+
+
 };

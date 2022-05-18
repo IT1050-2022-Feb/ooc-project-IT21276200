@@ -1,28 +1,23 @@
 #include "administrator.h"
 #include <iostream>
-#include <cstring>
-using namespace std;
+#include <string>
 
-Administrator::Administrator()
+Administrator::Administrator(string ufname,string ulname, string unic, string upno,string usf,string upos,int aid):User(ufname,ulname,unic,upno,usf,upos)
 {
-  FirstName="Sandalu";
-  LastName="Samarakoon";
-  Nic="2000325010169";
-  PhoneNo=768916609;
-  Position="Administrator";
-  adminid=1000;
+   adminid=aid;
 }
 
-void Administrator:: addUser(){}
-void Administrator:: editUser(){}
-void Administrator:: deleteUser(){}
+void addUser(){};
+void editUser(){};
+void deleteUser(){};
 
-void Administrator:: displayDeatails()
+void Administrator::displayDeatails()
+
 {
-  cout<<"First Name:"<<FirstName<<endl;
-  cout<<"Last Name:"<<LastName<<endl;
-  cout<<"Nic:"<<Nic<<endl;
-  cout<<"PhoneNo:"<<PhoneNo<<endl;
-  cout<<"Position:"<<Position<<endl;
-  cout<<"Admini Id:"<<adminid<<endl;
+cout<<"First Name : "<<FirstName<<endl;
+cout<<"Last Name : "<<LastName<<endl;
+cout<<"Nic : "<<Nic<<endl;
+cout<<"PhoneNo : "<<PhoneNo<<endl;
+cout<<"Position : "<<Position<<endl;
+cout<<"Admini Id : "<<adminid<<endl;
 }

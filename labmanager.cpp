@@ -4,10 +4,10 @@
 
 using namespace std;
 
-LabManager::LabManager(int lmid , Lab *l)
+LabManager::LabManager(int lmid , Lab *l):User(ufname,ulname,unic,upno,usf,upos)
 {
- labManagerID = lmid;
-lab = l;
+  labManagerID = lmid;
+  lab = l;
 }
 void LabManager::addlabDetails()
 {

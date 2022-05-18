@@ -1,17 +1,18 @@
 #include <string>
-usring namespace std;
+using namespace std;
+
 class User
 {
-  protected:
-    string FirstName;
-    string LastName;
-    string Nic;
-    int PhoneNo;
-    string SpecializingField;
-    string Position;
+protected:
+   string FirstName;
+   string LastName;
+   string Nic;
+   string PhoneNo;
+   string SpecializingField;
+   string Position;
 
-   public:
-    User();
-    void displayDeatails();
-    ~User();
+public:
+   User();
+   User(string ufname,string ulname, string unic, string upno,string usf,string upos);
+   void displayDeatails();
 };
