@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "Sample.h" //including header file
+#include "Sample.h" //including header file of sample class
 
 using namespace std;
 
