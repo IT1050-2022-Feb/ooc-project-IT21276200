@@ -18,7 +18,7 @@ public:
 
   Test(); // default constructor
 
-  Test(int tID , string tName, string tType, string tConBy, string ValSt, string 
+  Test(int tID , string tName, string tType, string tConBy,string ValSt, string 
   desc, string obs, string concl ); //overloaded constructor
 
   void displayDetails();
