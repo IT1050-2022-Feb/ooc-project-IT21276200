@@ -17,7 +17,7 @@ public:
 
     void displaySampleDetails();
 
-    ~Sample(); //destructor
+    ~Sample(); //destructor is declared
 };
 
 
