@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-User::User (string ufname,string ulname, string unic, string upno,string usf,string upos)
+User::User(string ufname,string ulname, string unic, string upno,string usf,string upos)
 {
  FirstName = ufname ;
  LastName = ulname ;

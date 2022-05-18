@@ -1,11 +1,12 @@
 #pragma once
 
 #include "Equipment.h"
+#include "user.h"
 #include <iostream> 
 #include <string>
 using namespace std;
 
-class LabAssistant
+class LabAssistant:public User
 {
 private:
 	int labAssistantID;
@@ -13,7 +14,7 @@ private:
 
 public:
 	LabAssistant();
-	LabAssistant(int ilabAssistantID, Equipment* e);
+	LabAssistant(string ufname,string ulname, string unic, string upno,string usf,string upos,int ilabAssistantID, Equipment* e);
 	void addEquipmentDetails();
 	~LabAssistant();
 	void addEquipment();

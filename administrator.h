@@ -1,3 +1,4 @@
+#pragma once
 #include "user.h"
 #include <string>
 using namespace  std;
@@ -14,6 +15,4 @@ class Administrator:public User
    void editUser();
    void deleteUser();
    void displayDeatails();
-
-
 };

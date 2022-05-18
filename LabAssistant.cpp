@@ -1,5 +1,6 @@
 #include "LabAssistant.h"
 
+
 #include <iostream> 
 #include <string>
 using namespace std;
@@ -10,7 +11,7 @@ LabAssistant::LabAssistant() {
 	eqmt = 0;
 	}
 //overloaded constructors
-LabAssistant::LabAssistant(int ilabAssistantID, Equipment*e):User(ufname,ulname,unic,upno,usf,upos)
+LabAssistant::LabAssistant(string ufname,string ulname, string unic, string upno,string usf,string upos,int ilabAssistantID, Equipment*e):User(ufname,ulname,unic,upno,usf,upos)
 {
 	labAssistantID = ilabAssistantID;
 	eqmt = e;

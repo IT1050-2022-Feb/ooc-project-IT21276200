@@ -28,3 +28,7 @@ void Test::displayDetails()
       cout << "Conclusion        : " << conclusion << endl;
       cout << "-------------------------------------------"<< endl;
 }
+
+ Test::~Test() {
+cout << "--> Delete Sample" << endl ;
+}

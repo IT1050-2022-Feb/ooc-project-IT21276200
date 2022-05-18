@@ -3,7 +3,7 @@
 #include <cstring>
 using namespace std;
 
-SScientist::SScientist (int pssID,  Test *c)
+SScientist::SScientist (string ufname,string ulname, string unic, string upno,string usf,string upos,int pssID,  Test *c):User(ufname,ulname,unic,upno,usf,upos)
 {
   	ssID = pssID;
    	conduct = c ;
@@ -15,7 +15,7 @@ void SScientist::displayConductedBy()
 	conduct -> displayDetails();
 }
 
-void displaySeniorScientistDetails(){
+void SScientist::displaySeniorScientistDetails(){
 cout << endl ;
 cout<<"First Name          : "<< FirstName <<endl;
 cout<<"Last Name           : "<< LastName <<endl;
@@ -45,3 +45,8 @@ cout << endl ;
   void deleteTest(){}
   void viewEquip(){}
   void validateTest(){}
+
+ SScientist::~SScientist() {
+ cout << "--> Delete Scientist" << endl ;
+   
+}

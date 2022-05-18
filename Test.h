@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 using namespace std;
 
@@ -21,5 +22,6 @@ public:
   desc, string obs, string concl ); //overloaded constructor
 
   void displayDetails();
- 
+
+  ~Test() // destructor 
 };

@@ -1,3 +1,4 @@
+#pragma once
 #include "administrator.h"
 #include <iostream>
 #include <string>

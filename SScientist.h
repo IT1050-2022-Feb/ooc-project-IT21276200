@@ -1,4 +1,6 @@
+#pragma once
 #include "Test.h"
+#include "user.h"
 #include <string>
 using namespace std;
 
@@ -13,7 +15,8 @@ class SScientist : user
 
   public:
 
-   SScientist (int pssID,  Test *c) ; //overloaded constructor
+   SScientist (); // default constructor
+   SScientist (string ufname,string ulname, string unic, string upno,string usf,string upos,int pssID,  Test *c) ; //overloaded constructor
 
    void displayConductedBy();
 
@@ -38,5 +41,7 @@ class SScientist : user
   void deleteTest();
   void viewEquip();
   void validateTest();
+
+ ~SScientist() ; //destructor
 
 };

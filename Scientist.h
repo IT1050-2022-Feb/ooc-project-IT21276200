@@ -1,3 +1,6 @@
+#pragma once
+
+#include "user.h"
 class Test;
 class Sample;
 
