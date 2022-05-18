@@ -10,14 +10,14 @@ Scientist::Scientist(){
   
 }
 
-//overloaded constructors  - with the inherited attributes from user
+//overloaded constructors  - with the inherited attributes from user class
 Scientist::Scientist(string ufname,string ulname, string unic, string upno,string usf,string upos ,string sID,Sample *s):User(ufname,ulname,unic,upno,usf,upos){
     scientistID = sID;
     samp = s;
 }
 
 
-
+//displaySampleBy method is implemented
 void Scientist::displaySampleBy() {
     cout << "Sample added by :" << scientistID << endl;
     samp->displaySampleDetails();
@@ -27,6 +27,8 @@ void Scientist::displayScientist(){
     cout << "Scientist : " << scientistID << endl << endl;
   }
 
+
+//displayScientistDetails is implemented
 void Scientist::displayScientistDetails(){
     cout << endl;
     cout<<"First Name : "<<FirstName<<endl;
