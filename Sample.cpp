@@ -8,10 +8,10 @@ using namespace std;
 //default constructor
 
 Sample::Sample(){
-  
+
 }
 
-//overloaded constructor
+//overloaded constructor is initiated
 
 Sample::Sample(string sampID, string sampName, string sampType, string sampLocation, string sampDescription, string sampStorageCondition, int sampQuantity, string sampDateCollected){
         sampleID = sampID;
@@ -37,7 +37,6 @@ void Sample::displaySampleDetails(){
         cout << "Date Collected    : " << dateCollected << endl;
         cout <<  endl;
 }
-
 
 //Destructor
 
