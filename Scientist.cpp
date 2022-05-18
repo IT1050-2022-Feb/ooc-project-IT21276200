@@ -40,7 +40,7 @@ void Scientist::displayScientistDetails(){
   }
 
 
- //one way association relation between scintist and sample
+ //one way association relation between scintist and sample classes 
   void Scientist::addSample(Sample* sampNew) {
     
   }
@@ -51,7 +51,7 @@ void Scientist::displayScientistDetails(){
   }
 
 
-//bi directional association between scientist and test
+//bi directional association between scientist and test classes 
 
   void Scientist::addTest(Test* test1) {
     
