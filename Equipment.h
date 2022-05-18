@@ -1,8 +1,9 @@
 #pragma once
-#include <iostream> 
-#include <string>
-using namespace std;
+#include <iostream>  // including iostream library
+#include <string>   // including string library
+using namespace std; 
 
+  // Equipment Class
 class Equipment
 {
 private:
@@ -10,8 +11,8 @@ private:
 	string equipmentName;
 	int quantity;
 public:
-	Equipment();
-	Equipment(string iequipmentID, string iname, int iquantity);
-	void displayDetails();
-	~Equipment();
+	Equipment();  // default constructor
+	Equipment(string iequipmentID, string iname, int iquantity); // overloaded constructors
+	void displayDetails(); // association relation between Equipment and Lab Assistamt
+	~Equipment(); // destructor
 };

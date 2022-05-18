@@ -15,7 +15,7 @@ private:
 public:
 	LabAssistant();
 	LabAssistant(string ufname,string ulname, string unic, string upno,string usf,string upos,int ilabAssistantID, Equipment* e);
-	void addEquipmentDetails();
+	void addEquipmentDetails(); //association relation between Equipment and Lab Assistamt
 	~LabAssistant();
 	void addEquipment();
 	void editEquipment();

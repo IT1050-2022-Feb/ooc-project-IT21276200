@@ -11,7 +11,7 @@ LabAssistant::LabAssistant() {
 	eqmt = 0;
 	}
 //overloaded constructors
-LabAssistant::LabAssistant(string ufname,string ulname, string unic, string upno,string usf,string upos,int ilabAssistantID, Equipment*e):User(ufname,ulname,unic,upno,usf,upos)
+LabAssistant::LabAssistant(string ufname,string ulname, string unic, string upno,string usf,string upos,int ilabAssistantID, Equipment*e):User(ufname,ulname,unic,upno,usf,upos) //Inheritance relationship
 {
 	labAssistantID = ilabAssistantID;
 	eqmt = e;
@@ -20,7 +20,7 @@ LabAssistant::LabAssistant(string ufname,string ulname, string unic, string upno
 void LabAssistant::addEquipmentDetails()
 {
 	cout << "     Lab_Assistant's ID : " << labAssistantID << endl;
-	eqmt->displayDetails();
+	eqmt->displayDetails();   //association relation between Equipment and Lab Assistamt
 }
 LabAssistant::~LabAssistant() {
 	cout << " --> Deleting Lab_Assistant " << endl;
