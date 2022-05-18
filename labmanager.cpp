@@ -2,8 +2,8 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
 
+using namespace std;
 
 LabManager::LabManager(string ufname,string ulname, string unic, string upno,string usf,string upos,int lmid , Lab *l):User(ufname,ulname,unic,upno,usf,upos)
 {
