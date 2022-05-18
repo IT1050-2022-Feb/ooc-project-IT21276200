@@ -17,25 +17,25 @@ using namespace std ;
 
 int main(){
 //creating objects dynamically and passing data to overloaded constructor
-User *u1 = new User("Sandalu","Samarakoon","2001111111","0777777777","Cancer","User");
+User *u1 = new User("Sandalu","Samarakoon","200032501069","0776588766","Cancer","User");
   
-Administrator *a1=new Administrator("Sandalu","Samarakoon","200112343212","0777777777","","Administrator",1000);
+Administrator *a1=new Administrator("Sandalu","Samarakoon","200112343212","0706588789","","Administrator",1000);
   
 Lab *lb1 = new Lab("Gavesh" , "cancer" , 03);
   
 LabManager * m1 = new LabManager("Gavesh","Samarathunga","200112343212","0766666666","","Lab Manager",1004,lb1);
 
- Equipment *e1 = new Equipment("00001", "Intensity Modulated Radiation Therapy / IMRT", 3);
+ Equipment *e1 = new Equipment("4001", "Intensity Modulated Radiation Therapy / IMRT", 3);
   
-LabAssistant *l1 = new LabAssistant("Thiwanka","Kalpage","200112343212","0760909090","","Lab Assistant",1003, e1);
+LabAssistant *l1 = new LabAssistant("Thiwanka","Kalpage","200133951026","0760357846","","Lab Assistant",1003, e1);
 
- Sample* s1 = new Sample("1", "Sample 1", "Type 1", "Storage wing B", "promising sample", "freezing", 3, "2020-02-22");
+ Sample* s1 = new Sample("5001", "Leukemia", "Complete blood sample", "Storage wing B", "promising sample", "freezing", 3, "2020-02-22");
   
-Scientist* sci1 = new Scientist("Manuja","Munasinghe","200112343212","0766281711","Cancer","Scientist","0001",s1);
+Scientist* sci1 = new Scientist("Manuja","Munasinghe","200112343212","0766241711","Cancer","Scientist","1001",s1);
 
- Test *t1 = new Test(60001, "name1", "type1", "Mr.ABC", "valid", "decription", "observation", "conclusion" );
+ Test *t1 = new Test(6001, "name1", "type1", "Mr.ABC", "valid", "decription", "observation", "conclusion" );
   
-SScientist *ss1 = new SScientist("Viduni","Herath","200112343212","0777777777","Cancer","Senior Scientist",1002, t1);
+SScientist *ss1 = new SScientist("Viduni","Herath","20004567890","0706578765","Cancer","Senior Scientist",1002, t1);
 
 
 //calling methods //FROM
