@@ -1,4 +1,4 @@
-#include "SScientist.h"
+#include "SScientist.h" // include header file
 #include <iostream>
 #include <cstring>
 using namespace std;
