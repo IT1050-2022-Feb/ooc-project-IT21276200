@@ -1,10 +1,14 @@
 #include <iostream>
 
-using namespace std ; 
+using namespace std; 
 
-int main (){
-  cout << "hello world" << endl ;
+//default constructor
 
-
-  return 0 ; 
+Scientist::Scientist(){
+  
 }
+
+//overloaded constructors 
+Scientist::Scientist
+
+
