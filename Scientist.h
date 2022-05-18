@@ -13,7 +13,7 @@ class Scientist : public User {
     string scientistID;
     Sample* samp;
   public:
-    Scientist();//default constructor
+    Scientist();//default constructor declared
     Scientist(string ufname,string ulname, string unic, string upno,string usf,string upos ,string sID,Sample *s); //overloaded constructor declared  
 
   void displaySampleBy();
